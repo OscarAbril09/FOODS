@@ -1,4 +1,4 @@
-const sectionHome = document.getElementById("section_home");
+/*const sectionHome = document.getElementById("section_home");
 const sectionAbout = document.getElementById("section_about");
 const sectionMenu = document.getElementById("section_menu");
 const sectionServices = document.getElementById("section_services");
@@ -51,3 +51,4 @@ function fContact() {
   sectionContact.style.display = "flex";
 }
 window.addEventListener("DOMContentLoaded", iniciar());
+*/
