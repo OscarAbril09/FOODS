@@ -1,157 +1,182 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8" />
     <title>FOODS'S</title>
-    <link rel="shortcut icon" href="./image/icon.svg">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./image/icon.svg" type="image/x-icon">
     <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <script src="js/main.js" defer></script>
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css" >
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/bootstrap/bootstrap.bundle.js" defer></script>
 </head>
-
 <body>
     <header>
-        <div class="Logo">
-            <h1>FOODS</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><button id="home" class="home">Home</button></li>
-                <li><button id="about">About</button></li>
-                <li><button id="menu">Menu</button></li>
-                <li><button id="service">Service</button></li>
-                <li><button id="contact">Contact</button></li>
-
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-5 container-lg px-lg-0 py-lg-4 d-lg-flex justify-content-lg-between">
+              <h1 class="ms-lg-5 ps-lg-5"><b>FOODS</b></h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bx bx-menu"></i>
+              </button>
+              <div class="none"></div>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav position-absolute w-100 py-5 py-lg-0">
+                  <button class="button bg-transparent" id="home">Home</button>
+                  <button class="button bg-transparent">About</button>
+                  <button class="button bg-transparent">Menu</button>
+                  <button class="button bg-transparent">Service</button>
+                  <button class="button bg-transparent">Contact</button>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-    <section class="section_home" id="section_home">
-        <div>
-            <h3>Full Website</h3>
-            <div class="div_p_home">
-                <p id="p_home" class="p_home">Foods the </p>
-                <p id="p_home"> Most precious thing</p>
-            </div>
-            <button id="button_home">Today's Menu</button>
+    <div class="container-fluid container-lg pb-5">
+      <div class="row d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-center mt-lg-5 mb-lg-5">
+        <div class="col-12 col-lg-6">
+          <div class="text-center mt-5 mt-lg-0 d-lg-flex flex-lg-column align-items-lg-start justify-content-lg-center">
+            <h3><b>Full Website</b></h3>
+            <p>Foods the </p>
+            <p class="mt--0"> Most precious thing</p>
+            <button>Today's Menu</button>
+          </div>
         </div>
-        <img src="./image/home.png" alt="home" id="img_home">
-    </section>
-
-    <section class="section_about" id="section_about">
-        <div class="img_about">
-            <img src="./image/about.png" alt="about" id="img_about">
+        <div class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center">
+          <img class="w-home me-lg-5" src="./image/home.png" alt="home" width="80%">
         </div>
-        <div class="div_text_about">
-            <h2>About Us</h2>
-            <p class="p1_about">We speak the good <br> food
-                language</p>
-            <p class="p2_about">It is a established fact that a be distracted by the readable content looking at its
-                layout. the point of</p>
-            <button id="button_about">learn More</button>
+      </div>
+      <div class="row d-flex flex-column align-items-center justify-content-center flex-lg-row-reverse ms-lg-5 mt-lg-5">
+        <div class="col-12 mt-5 mt-lg-0 col-lg-6 mt-lg-5">
+          <div class="text-center text-lg-start my-5 d-flex flex-column align-items-center align-items-lg-start justify-content-lg-start">
+            <h4 class="mb--0">About Us</h4>
+            <h2 class="my-4">We speak the good <br> 
+              food language</h2>
+            <p class="menor mb-5 mt--0">It is a established fact that a be distracted by the readable content looking at its
+              layout. the point of</p>
+          <button class="px-4 mt--0">Learn More</button>
+          </div>
         </div>
-    </section>
-
-    <section class="section_menu" id="section_menu">
-        <h2 id="h2_menu">Food Menu</h2>
-        <p class="p_menu">Fresh taste and grat price</p>
-        <div class="div_menu">
-            <input type="radio" name="menu" class="input" id="Chiken_Burger">
-            <label class="label_menu" id="label_menu0" for="Chiken_Burger">
-                <img src="./image/food1.png" alt="food1">
-                <p class="p1_menu"><strong> Chiken Burger</strong></p>
-                <p class="p1_menu">Tasty Food</p>
-                <p class="p1_menu" id="p_price">$11.00</p>
-            </label>
-
-            <input type="radio" name="menu" class="input" id="Special_Beef">
-            <label class="label_menu" id="label_menu1" for="Special_Beef">
-                <img src="./image/food2.png" alt="food2">
-                <p class="p1_menu"><strong>Special Beef Burger</strong></p>
-                <p class="p1_menu">Tasty Food</p>
-                <p class="p1_menu" id="p_price">$11.00</p>
-            </label>
-
-            <input type="radio" name="menu" class="input" id="Fry_Pack">
-            <label class="label_menu" id="label_menu2" for="Fry_Pack">
-                <img src="./image/food3.png" alt="food3">
-                <p class="p1_menu"><strong>Fry Pack</strong></p>
-                <p class="p1_menu">Tasty Food</p>
-                <p class="p1_menu" id="p_price">$11.00</p>
-            </label>
+        <div class="col-12 col-lg-6 mt-lg-5">
+          <div class="d-flex justify-content-center ms-lg-4">
+            <img src="./image/about.png" alt="about" width="80%">
+          </div>         
         </div>
-    </section>
-
-    <section class="section_services" id="section_services">
-        <h2>Services</h2>
-        <p class="p_menu" id="p_services">We provide best food services</p>
-        <div class="div_menu" id="div_services">
-            <div class="div_services">
-                <img src="./image/s1.png" alt="Order" id="img_services">
-                <p class="p_services"><b> Order </b></p>
-                <p class="p1_services">It is a long established be distracted by the readable looking at its layout</p>
-            </div>
-            <div class="div_services">
-                <img src="./image/s2.png" alt="Shipping" id="img_services">
-                <p class="p_services"><b>Shipping</b></p>
-                <p class="p1_services">It is a long established be distracted by the readable looking at its layout</p>
-            </div>
-            <div class="div_services">
-                <img src="./image/s3.png" alt="Dellvered" id="img_services">
-                <p class="p_services"><b>Dellvered</b></p>
-                <p class="p1_services">It is a long established be distracted by the readable looking at its layout</p>
-            </div>
+      </div>
+      <div class="row d-flex flex-column align-items-center mt-5 flex-lg-row mb-lg-5">
+        <div class="col-12 d-flex flex-column align-items-center my-4">
+          <h4 class="pt-5 pb-3">Food Menu</h4>
+          <h2 class="text-center mt--0 mb-lg-3">Fresh taste and grat price</h2>
         </div>
-        <label class="label_services"><b>We make quality food everyday</b>
-            <button id="button_services">Learn More</button>
-        </label>
-    </section>
+        <div class="col-8 my-4 col-lg-4">
+          <div class="d-flex flex-column align-items-center img_menu">
+            <img src="./image/food1.png" alt="food1" width="60%">
+            <p class="nam"><strong> Chiken Burger</strong></p>
+            <p>Tasty Food</p>
+            <p class="precio">$11.00</p>
+          </div>
+        </div>
+        <div class="col-8 my-4 col-lg-4">
+          <div class="d-flex flex-column align-items-center img_menu">
+            <img src="./image/food2.png" alt="food2" width="60%">
+            <p class="nam text-center"><strong>Special Beef Burger</strong></p>
+            <p>Tasty Food</p>
+            <p class="precio">$11.00</p>
+          </div>
+        </div>
+        <div class="col-8 my-4 col-lg-4">
+          <div class="d-flex flex-column align-items-center img_menu">
+            <img src="./image/food3.png" alt="food3" width="60%">
+            <p class="nam"><strong>Fry Pack</strong></p>
+            <p>Tasty Food</p>
+            <p class="precio">$11.00</p>
+          </div>
+        </div>
+      </div>
 
-    <section class="section_contact" id="section_contact">
-            <div class="div_container">
-                <h4> Menu Links</h4>
-                <div>
-                    <p class="botton_links">Home</p>
-                    <p class="botton_links">About</p>
-                    <p class="botton_links">Menu</p>
-                    <p class="botton_links">Services</p>
-                    <p class="botton_links">Contact</p>
-                </div>
+      <div class="row mt-lg-5">
+        <div class="col-12 mt-5">
+          <div class="text-center my-4">
+            <h4 class="mb-4 mb--0">Services</h4>
+            <h2>We provide best food services</h2>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="d-flex flex-column align-items-center flex-lg-row ">
+            <div class="text-center d-flex flex-column my-4 align-items-center">
+              <img src="./image/s1.png" alt="Order" width="40%">
+              <h1>Order</h1>
+              <p class="menor service">It is a long established be distracted by the readable looking at its layout</p>
             </div>
-            <div class="div_container">
-                <h4 class="our">Our Servive</h4>
-                <div>
-                    <p class="botton_links">Web Design</p>
-                    <p class="botton_links">Web Development</p>
-                    <p class="botton_links">Marketing</p>
-                    <p class="botton_links">Product Management</p>
-                    <p class="botton_links">Graphic Desing</p>
-                </div>
+            <div class="text-center d-flex flex-column my-4 align-items-center">
+              <img src="./image/s2.png" alt="Order" width="40%">
+              <h1>Shipping</h1>
+              <p class="menor service">It is a long established be distracted by the readable looking at its layout</p>
             </div>
-            <div class="div_container">
-                <h4 class="inform">Information</h4>
-                <div>
-                    <p class="botton_links">About Us</p>
-                    <p class="botton_links">Delivery Information</p>
-                    <p class="botton_links">Privacy Policy</p>
-                    <p class="botton_links">Terms & Conditions</p>
-                </div>
+            <div class="text-center d-flex flex-column my-4 align-items-center">
+              <img src="./image/s3.png" alt="Order" width="40%">
+              <h1>Dellvered</h1>
+              <p class="menor service">It is a long established be distracted by the readable looking at its layout</p>
             </div>
-            <div class="div_container">
-                <h4>Contact Us</h4>
-                <div class="icons"> 
-                    <a href="#"> <i class="bx bxl-whatsapp"></i></a>
-                    <a href="#"><i class="bx bxl-facebook"></i></a>
-                    <a href="#"> <i class="bx bxl-instagram"></i></a>
-                    <a href="#"> <i class="bx bxl-twitter"></i></a>
-                    
-                </div>
-            </div>
-    </section>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 p-5">
+          <div class="make text-center py-4">
+            <p class="mt-3">We make quality food everyday</p>
+            <button class="px-4 my-3">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="row px-5">
+          <div class="col-12 col-lg-3 px-5">
+            <h1 class="mt-4 fs-2"> Menu Links</h1>
+            <i class='bx bx-minus'></i>
+            <p id="p" class="fs-4 m-">Home</p>
+            <p id="p" class="fs-4 m-0">About</p>
+            <p id="p" class="fs-4 m-0">Menu</p>
+            <p id="p" class="fs-4 m-0">Services</p>
+            <p id="p" class="fs-4 m-0">Contact</p>
 
+          </div>
+          <div class="col-12 col-lg-3 px-5
+          ">
+            <h1 class="mt-4 fs-2">Our Servive</h1>
+            <i class='bx bx-minus'></i>
+            <p id="p1" class="fs-5 m-">Web Design</p>
+            <p id="p1" class="fs-5 m-0">Web Development</p>
+            <p id="p1" class="fs-5 m-0">Marketing</p>
+            <p id="p1" class="fs-5 m-0">Product Management</p>
+            <p id="p1" class="fs-5 m-0">Graphic Desing</p>
 
+          </div>
+          <div class="col-12 col-lg-3 px-5
+          ">
+            <h1 class="mt-4 fs-2">Information</h1>
+            <i class='bx bx-minus'></i>
+            <p id="p1" class="fs-5 m-">About Us</p>
+            <p id="p1" class="fs-5 m-0">Delivery Information</p>
+            <p id="p1" class="fs-5 m-0">Privacy Policy</p>
+            <p id="p1" class="fs-5 m-0">Terms & Conditions</p>
+
+          </div>
+          <div class="col-12 col-lg-3 text-center d-flex flex-column align-items-center mb-5">
+            <h1 class="mt-4 fs-2 mb-3">Contact Us</h1>
+            <div class="icons "> 
+              <a href="#"> <i class="bx bxl-whatsapp"></i></a>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+              <a href="#"> <i class="bx bxl-instagram"></i></a>
+              <a href="#"> <i class="bx bxl-twitter"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    
 </body>
-
 </html>
